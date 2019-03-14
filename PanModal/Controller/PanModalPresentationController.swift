@@ -185,6 +185,7 @@ public class PanModalPresentationController: UIPresentationController {
 
         coordinator.animate(alongsideTransition: { [weak self] _ in
             self?.backgroundView.dimState = .max
+            self?.presentedViewController.setNeedsStatusBarAppearanceUpdate()
         })
     }
 
@@ -202,6 +203,7 @@ public class PanModalPresentationController: UIPresentationController {
         coordinator.animate(alongsideTransition: { [weak self] _ in
             self?.dragIndicatorView.alpha = 0.0
             self?.backgroundView.dimState = .off
+            self?.presentingViewController.setNeedsStatusBarAppearanceUpdate()
         })
     }
 
