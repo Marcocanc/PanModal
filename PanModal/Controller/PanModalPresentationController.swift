@@ -415,7 +415,7 @@ private extension PanModalPresentationController {
          */
         scrollView.showsVerticalScrollIndicator = false
         scrollView.isScrollEnabled = presentable?.isPanScrollEnabled ?? true
-        scrollView.scrollIndicatorInsets = presentable?.scrollIndicatorInsets ?? .zero
+//        scrollView.scrollIndicatorInsets = presentable?.scrollIndicatorInsets ?? .zero
 
         /**
          Set the appropriate contentInset as the configuration within this class
